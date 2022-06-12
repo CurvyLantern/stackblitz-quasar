@@ -10,7 +10,7 @@
 
 
 const { configure } = require('quasar/wrappers');
-const {presetUno} = require('@unocss/preset-uno');
+const { presetUno } = require('@unocss/preset-uno');
 
 
 module.exports = configure(function (/* ctx */) {
@@ -24,7 +24,7 @@ module.exports = configure(function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
-      
+      'unoCSS',
       'axios',
     ],
 
@@ -59,7 +59,7 @@ module.exports = configure(function (/* ctx */) {
       // vueDevtools,
       // vueOptionsAPI: false,
 
-      // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
+      rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
       // publicPath: '/',
       // analyze: true,
